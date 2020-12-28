@@ -18,7 +18,7 @@ function HeroText(): JSX.Element {
             quality={100}
           />
         </div>
-        <div className="text-base pl-2 leading-4 text-white text-center lg:text-left">
+        <div className="text-base pl-2 leading-4 text-white text-center md:text-left">
           <p className="font-semibold">Jesson Jei Rebua</p>
           <p>Fullstack Web developer</p>
         </div>
