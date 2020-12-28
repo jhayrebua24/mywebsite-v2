@@ -5,8 +5,8 @@ interface Props {
 
 function Container({ children, className }: Props): JSX.Element {
   return (
-    <div className="container mx-auto">
-      <div className={className}>{children}</div>
+    <div className="wrapper-container">
+      <div className={`${className} w-full`}>{children}</div>
     </div>
   );
 }

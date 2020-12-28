@@ -10,6 +10,9 @@ module.exports = {
       maxWidth: {
         fhd: "1920px",
       },
+      screens: {
+        fhd: "1920px",
+      },
     },
   },
   variants: {

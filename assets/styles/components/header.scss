@@ -1,0 +1,23 @@
+header {
+  @apply bg-brand;
+  .nav {
+    @apply w-full flex items-center justify-between  overflow-hidden;
+    @apply py-6;
+
+    .nav-menu {
+      @apply flex space-x-6;
+
+      .nav-item {
+        @apply text-sm 2xl:text-base uppercase font-semibold  text-white cursor-pointer py-4 px-2 border-b-4 border-brand;
+
+        &:hover {
+          @apply border-primary;
+        }
+      }
+    }
+
+    .nav-logo {
+      @apply flex space-x-12;
+    }
+  }
+}

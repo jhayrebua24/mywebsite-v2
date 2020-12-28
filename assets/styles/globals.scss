@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./components/header.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper-container {
+  @apply w-full mx-auto px-6;
+
+  @screen md {
+    max-width: 95%;
+    @apply px-0;
+  }
+
+  @screen xl {
+    max-width: 90%;
+  }
+
+  @screen fhd {
+    @apply px-0 max-w-screen-fhd px-12;
+  }
+}

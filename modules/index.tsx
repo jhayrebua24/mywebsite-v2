@@ -2,7 +2,7 @@ import HeroContainer from "modules/hero/containers/HeroContainer";
 
 function index(): JSX.Element {
   return (
-    <div>
+    <div className="flex flex-col">
       <HeroContainer />
     </div>
   );
