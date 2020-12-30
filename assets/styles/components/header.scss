@@ -1,5 +1,5 @@
 header {
-  @apply bg-brand;
+  @apply bg-brand fixed w-full;
   .nav {
     @apply w-full flex items-center justify-between  overflow-hidden;
     @apply py-6;
@@ -9,9 +9,12 @@ header {
 
       .nav-item {
         @apply text-sm 2xl:text-base uppercase font-semibold  text-white cursor-pointer py-4 px-2 border-b-4 border-brand;
+        transition: all ease-out 150ms;
 
-        &:hover {
+        &:hover,
+        &.active {
           @apply border-primary;
+          transform: scale(1.1);
         }
       }
     }

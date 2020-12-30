@@ -1,13 +1,33 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { variants } from "../constants";
 
 function HeroText(): JSX.Element {
   return (
-    <div className="flex flex-grow h-full flex-col justify-center items-center md:items-start w-full md:w-max space-y-2 md:space-y-6">
+    <div className="flex flex-grow h-full flex-col justify-center items-center md:items-start w-full md:w-max space-y-4 md:space-y-6">
       <div className="flex flex-col space-y-6">
         <div className="text-white capitalize text-5xl  md:text-5xl lg:text-7xl 2xl:text-8xl tracking-tighter font-semibold  text-center md:text-left">
-          <p>Building</p>
-          <p>responsive & user friendly</p>
-          <p>Websites</p>
+          <motion.p
+            animate="animate"
+            initial="initial"
+            variants={variants.firstText}
+          >
+            Building
+          </motion.p>
+          <motion.p
+            animate="animate"
+            initial="initial"
+            variants={variants.secondText}
+          >
+            responsive & user friendly
+          </motion.p>
+          <motion.p
+            animate="animate"
+            initial="initial"
+            variants={variants.thirdText}
+          >
+            Websites
+          </motion.p>
         </div>
         <div className="flex md:hidden">
           <Image
@@ -18,17 +38,25 @@ function HeroText(): JSX.Element {
             quality={100}
           />
         </div>
-        <div className="text-base pl-2 leading-4 text-white text-center md:text-left">
+        <motion.div
+          animate="animate"
+          initial="initial"
+          variants={variants.name}
+          className="text-base pl-2 leading-4 text-white text-center md:text-left"
+        >
           <p className="font-semibold">Jesson Jei Rebua</p>
           <p>Fullstack Web developer</p>
-        </div>
+        </motion.div>
       </div>
-      <button
+      <motion.button
+        whileHover={{
+          scale: 0.98,
+        }}
         className="bg-primary text-white text-xl p-4 w-48 md:w-48 rounded-full shadow-lg font-semibold"
         type="button"
       >
         Learn more.
-      </button>
+      </motion.button>
     </div>
   );
 }
