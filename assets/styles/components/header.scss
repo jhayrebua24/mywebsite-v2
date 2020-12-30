@@ -1,5 +1,11 @@
 header {
-  @apply bg-brand fixed w-full;
+  @apply bg-brand fixed w-full py-2;
+  transition: all ease-in-out 100ms;
+
+  &.scroll {
+    @apply shadow-xl py-0;
+  }
+
   .nav {
     @apply w-full flex items-center justify-between  overflow-hidden;
     @apply py-6;

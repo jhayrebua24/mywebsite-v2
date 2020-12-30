@@ -6,7 +6,7 @@ import HeroText from "../components/HeroText";
 function HeroContainer(): JSX.Element {
   return (
     <div className="flex flex-col h-screen w-full bg-brand">
-      <Element name="hero" className="flex h-full">
+      <Element name="hero" className="flex h-full pt-16">
         <Container className="h-full flex flex-col md:flex-row  overflow-hidden">
           <HeroText />
           <HeroImage />

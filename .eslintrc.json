@@ -52,7 +52,12 @@
     ],
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "react/prop-types": ["off", {}],
     // import
     "import/extensions": [

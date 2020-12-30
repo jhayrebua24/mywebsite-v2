@@ -1,0 +1,28 @@
+.banner-wrapper {
+  @apply w-full flex justify-center;
+
+  @screen md {
+    &.left {
+      @apply justify-start;
+    }
+
+    &.right {
+      @apply justify-end;
+    }
+  }
+
+  .banner {
+    @apply text-white bg-primary w-80 text-2xl py-6 px-6 text-center capitalize font-semibold rounded-xl;
+
+    @screen md {
+      @apply w-96  text-3xl;
+      &.left {
+        @apply rounded-tl-none rounded-bl-none rounded-tr-xl rounded-br-xl  text-left;
+      }
+
+      &.right {
+        @apply rounded-tr-none rounded-br-none  rounded-tl-xl rounded-bl-xl text-right;
+      }
+    }
+  }
+}

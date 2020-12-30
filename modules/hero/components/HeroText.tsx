@@ -19,7 +19,7 @@ function HeroText(): JSX.Element {
             initial="initial"
             variants={variants.secondText}
           >
-            responsive & user friendly
+            responsive &amp; user friendly
           </motion.p>
           <motion.p
             animate="animate"

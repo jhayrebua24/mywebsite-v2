@@ -1,10 +1,26 @@
+import * as R from "react";
+import _debounce from "lodash/debounce";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import Container from "./Container";
 
 function Header(): JSX.Element {
+  const [scrolled, setScrolled] = R.useState<boolean>(false);
+
+  const handleScroll = _debounce(() => {
+    const isScrolled = window.pageYOffset > 1;
+    setScrolled(isScrolled);
+  }, 10);
+
+  R.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header>
+    <header className={`${scrolled && "scroll"}`}>
       <Container>
         <nav className="nav">
           <ul className="nav-menu">
