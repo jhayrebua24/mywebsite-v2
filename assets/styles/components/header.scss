@@ -7,14 +7,16 @@ header {
     .nav-menu {
       @apply flex space-x-6;
 
-      .nav-item {
-        @apply text-sm 2xl:text-base uppercase font-semibold  text-white cursor-pointer py-4 px-2 border-b-4 border-brand;
-        transition: all ease-out 150ms;
-
-        &:hover,
-        &.active {
-          @apply border-primary;
-          transform: scale(1.1);
+      li {
+        @apply p-0 m-0;
+        .nav-link {
+          @apply text-sm 2xl:text-base uppercase font-semibold  text-white cursor-pointer py-4 px-2 border-b-4 border-brand;
+          transition: all ease-out 150ms;
+          &:hover,
+          &.active {
+            @apply border-primary;
+            transform: scale(1.1);
+          }
         }
       }
     }
