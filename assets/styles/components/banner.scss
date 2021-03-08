@@ -1,6 +1,5 @@
 .banner-wrapper {
-  @apply w-full flex justify-center;
-
+  @apply w-full mx-auto max-w-screen-fhd flex justify-center;
   @screen md {
     &.left {
       @apply justify-start;
@@ -12,10 +11,10 @@
   }
 
   .banner {
-    @apply text-white bg-primary w-80 text-2xl py-6 px-6 text-center capitalize font-semibold rounded-xl;
+    @apply text-white bg-primary w-80 text-3xl py-6 px-6 text-center capitalize font-semibold rounded-xl;
 
     @screen md {
-      @apply w-96  text-3xl;
+      @apply w-96  text-4xl;
       &.left {
         @apply rounded-tl-none rounded-bl-none rounded-tr-xl rounded-br-xl  text-left;
       }

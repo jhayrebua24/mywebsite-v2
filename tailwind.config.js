@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#594FD0",
+        brand: "#5C3DC4",
         primary: "#FF8832",
+        letter: "#323232",
       },
       maxWidth: {
         fhd: "1920px",

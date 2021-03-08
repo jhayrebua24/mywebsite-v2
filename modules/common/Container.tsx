@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 interface Props {
   children: React.ReactNode;
   className?: string;
@@ -6,7 +8,7 @@ interface Props {
 function Container({ children, className }: Props): JSX.Element {
   return (
     <div className="wrapper-container">
-      <div className={`${className} w-full`}>{children}</div>
+      <div className={clsx("w-full", className && className)}>{children}</div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 header {
   @apply bg-brand fixed w-full py-2;
   transition: all ease-in-out 100ms;
+  z-index: 9999;
 
   &.scroll {
     @apply shadow-xl py-0;

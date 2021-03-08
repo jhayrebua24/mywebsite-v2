@@ -2,6 +2,7 @@ import * as R from "react";
 import _debounce from "lodash/debounce";
 import Image from "next/image";
 import { Link } from "react-scroll";
+import clsx from "clsx";
 import Container from "./Container";
 
 function Header(): JSX.Element {
@@ -20,7 +21,7 @@ function Header(): JSX.Element {
     };
   }, []);
   return (
-    <header className={`${scrolled && "scroll"}`}>
+    <header className={clsx(scrolled && "scroll")}>
       <Container>
         <nav className="nav">
           <ul className="nav-menu">

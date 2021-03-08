@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
+import { HiArrowNarrowDown } from "react-icons/hi";
 import { variants } from "../constants";
 
 function HeroText(): JSX.Element {
@@ -19,8 +21,9 @@ function HeroText(): JSX.Element {
             initial="initial"
             variants={variants.secondText}
           >
-            responsive &amp; user friendly
+            responsive &amp; Robust
           </motion.p>
+
           <motion.p
             animate="animate"
             initial="initial"
@@ -34,7 +37,7 @@ function HeroText(): JSX.Element {
             src="/img/HeroImage.svg"
             alt="coding-image"
             width={600}
-            height={300}
+            height={250}
             quality={100}
           />
         </div>
@@ -42,21 +45,21 @@ function HeroText(): JSX.Element {
           animate="animate"
           initial="initial"
           variants={variants.name}
-          className="text-base pl-2 leading-4 text-white text-center md:text-left"
+          className="text-xl pl-2 leading-6 text-white text-center md:text-left"
         >
           <p className="font-semibold">Jesson Jei Rebua</p>
           <p>Fullstack Web developer</p>
         </motion.div>
       </div>
-      <motion.button
-        whileHover={{
-          scale: 0.98,
-        }}
-        className="bg-primary text-white text-xl p-4 w-48 md:w-48 rounded-full shadow-lg font-semibold"
-        type="button"
+      <Link
+        to="skills"
+        className="flex flex-col items-center mt-8 md:mt-10 pb-4 cursor-pointer ml-2  animate-pulse"
+        smooth
+        duration={500}
       >
-        Learn more.
-      </motion.button>
+        <span className="text-pink-500 font-semibold">Scroll here</span>
+        <HiArrowNarrowDown className="mt-2 text-pink-500" size={50} />
+      </Link>
     </div>
   );
 }
