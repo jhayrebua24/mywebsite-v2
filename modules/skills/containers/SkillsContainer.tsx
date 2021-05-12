@@ -16,7 +16,7 @@ function SkillsContainer(): JSX.Element {
           }}
         />
       </div>
-      <Container className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-x-8 gap-y-4 fhd:gap-x-24 py-8 md:py-12">
+      <Container className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-x-8 gap-y-4 fhd:gap-x-24 py-8 md:py-12 max-w-screen-2xl mx-auto">
         {skillset.map((data) => (
           <SkillsCard data={data} />
         ))}
