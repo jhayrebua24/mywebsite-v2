@@ -110,13 +110,7 @@ function Header(): JSX.Element {
               <img src="/img/mail_logo.png" alt="mail" width="36" height="36" />
             </a>
             <a href="#test">
-              <img
-                src="/img/gitlogo.png"
-                alt="git"
-                width="36"
-                height="36 "
-                quality={100}
-              />
+              <img src="/img/gitlogo.png" alt="git" width="36" height="36 " />
             </a>
           </div>
         </nav>
