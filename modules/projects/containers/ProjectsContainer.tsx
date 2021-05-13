@@ -2,12 +2,9 @@ import Banner from "modules/common/Banner";
 import Container from "modules/common/Container";
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
 import ProjectDetails from "../components/ProjectDetails";
 import { projects, reviews } from "../constants";
 import Reviews from "../components/Reviews";
-
-SwiperCore.use([Navigation, Pagination]);
 
 function ProjectsContainer(): JSX.Element {
   return (
@@ -36,7 +33,6 @@ function ProjectsContainer(): JSX.Element {
             wrapperTag="ul"
             navigation
             pagination
-            autoplay
           >
             {reviews.map((review) => (
               <SwiperSlide className="flex justify-center px-12">

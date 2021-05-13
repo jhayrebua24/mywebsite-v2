@@ -1,5 +1,5 @@
 .banner-wrapper {
-  @apply w-full mx-auto max-w-screen-fhd flex justify-center;
+  @apply w-full mx-auto max-w-screen-fhd flex justify-center z-50;
   @screen md {
     &.left {
       @apply justify-start;

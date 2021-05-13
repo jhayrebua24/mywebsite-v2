@@ -16,6 +16,40 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.skew-bg {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  z-index: 0;
+}
+
+.about-container:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: #5c3dc4;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.about-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
 .wrapper-container {
   @apply w-full mx-auto px-6;
 

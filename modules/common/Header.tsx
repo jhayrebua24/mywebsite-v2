@@ -1,6 +1,5 @@
 import * as R from "react";
 import _debounce from "lodash/debounce";
-import Image from "next/image";
 import { Link } from "react-scroll";
 import clsx from "clsx";
 import Container from "./Container";
@@ -100,25 +99,18 @@ function Header(): JSX.Element {
           </ul>
           <div className="nav-logo">
             <a href="#test">
-              <Image
+              <img
                 src="/img/linkedinlogo.png"
                 alt="linkedin"
                 width="36"
                 height="36"
-                quality={100}
               />
             </a>
             <a href="#test">
-              <Image
-                src="/img/mail_logo.png"
-                alt="mail"
-                width="36"
-                height="36"
-                quality={100}
-              />
+              <img src="/img/mail_logo.png" alt="mail" width="36" height="36" />
             </a>
             <a href="#test">
-              <Image
+              <img
                 src="/img/gitlogo.png"
                 alt="git"
                 width="36"
